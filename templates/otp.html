@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <h2>Kirjaudu sovellukseen klikkaamalla alla olevaa linkkiä</h2>
+    <p>
+      <a href="{{ .SiteURL }}/verify-otp?token_hash={{ .TokenHash }}&type=email"
+        >Kirjaudu sisään</a
+      >
+    </p>
+    <p>tai vaihtoehtoisesti syötä sovellukseen seuraava koodi:</p>
+    <h2>{{ .Token }}</h2>
+  </body>
+</html>
